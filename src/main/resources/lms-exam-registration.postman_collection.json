@@ -1,0 +1,378 @@
+{
+    "info": {
+      "name": "lms-exam-registration",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get All Students",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/students",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "students"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create New Student",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Jane Doe\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/students",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "students"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Student by ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/students/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "students",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Update Student",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"name\": \"Updated Student Name\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/students/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "students",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Delete Student",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/students/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "students",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get All Subjects",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/subjects",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "subjects"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create New Subject",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"name\": \"New Subject Name\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/subjects",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "subjects"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Subject by ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/subjects/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "subjects",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Update Subject",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"name\": \"Updated Subject\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/subjects/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "subjects",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Delete Subject",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/subjects/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "subjects",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get All Exams",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/exams",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "exams"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create New Exam",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"subject\": \"Math\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/exams",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "exams"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Exam by ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/exams/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "exams",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Update Exam",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"subject\": \"Updated Exam Subject\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8080/exams/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "exams",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Delete Exam",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/exams/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "exams",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Register Student for Exam",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8080/exams/1/students/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "exams",
+              "1",
+              "students",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
